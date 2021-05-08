@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Mainpage from "./Mainpage";
+import MainChat from "./MainChat";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         {/* <Navbar className="bar" /> */}
         <Route exact path="/" component={Mainpage} />
+        <Route exact path="/mainchat" component={MainChat} />
     
       </BrowserRouter>
     </div>
