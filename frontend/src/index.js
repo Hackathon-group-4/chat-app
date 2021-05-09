@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+// i'm starting to think that this this is where routes are decided, not on backend
 ReactDOM.render(
   <React.StrictMode>
     <App />
