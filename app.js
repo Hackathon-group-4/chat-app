@@ -32,7 +32,7 @@ app.use("/", index);
 
 
 const path = require('path');
-app.use(express.static(path.join(__dirname, "/frontend/build")));
+app.use(express.static(path.join(__dirname, "/client/build")));
 
 
 app.use((req, res) => {
