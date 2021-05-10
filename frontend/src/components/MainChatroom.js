@@ -13,7 +13,7 @@ class MainChatroom extends React.Component {
     username: '',
     message: '',
     currentMessages: [],
-    room: '/',
+    room: 'Global',
     previousRoom: ''
   }
 
@@ -52,7 +52,9 @@ class MainChatroom extends React.Component {
       message: messageField.value,
       username: this.state.username,
       userId: socket.id,
-      room: this.state.room
+      room: this.state.room,
+     
+
     })
   }
 
