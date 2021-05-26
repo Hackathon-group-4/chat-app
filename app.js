@@ -2,14 +2,6 @@
 // https://www.npmjs.com/package/dotenv
 require("dotenv/config");
 
-const path = require('path');
-app.use(express.static(path.join(__dirname, "/client/build")));
-
-app.use((req, res) => {
-  // If no routes match, send them the React HTML.
-  res.sendFile(__dirname + "/client/build/index.html");
-});
-
 // ℹ️ Connects to the database
 require("./db");
 
